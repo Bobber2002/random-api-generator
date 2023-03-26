@@ -1,7 +1,18 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+
+interface MyData {
+  data: {
+    API: string;
+    Description: string;
+    Link: string;
+  };
+}
+
 function App() {
-  const [api, setApi] = useState<{ data: Object }>({ data: {} });
+  const [api, setApi] = useState<MyData>({
+    data: { API: "", Description: "", Link: "" },
+  });
 
   const Apis = () => {
     axios.get("https://api.publicapis.org/random").then((res) => {
