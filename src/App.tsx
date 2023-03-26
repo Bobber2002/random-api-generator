@@ -92,6 +92,7 @@ function App() {
                   </div>
                   <div className="w-full h-1/3 flex flex-col gap-4 justify-end items-center pt-12">
                     <button
+                      onClick={() => window.open(api.data.Link)}
                       className="w-[22.75%] h-[65%] text-black text-3xl text-bold from-white via-gray-100 to-gray-300 bg-gradient-to-tr rounded-3xl drop-shadow-md"
                       style={{
                         boxShadow: " -8px 8px 0px 0px rgba(115,115,115,1)",
@@ -99,7 +100,9 @@ function App() {
                     >
                       <i>Take me there!</i>
                     </button>
-                    <p className="cursor-pointer" onClick={()=>Apis()}>New API.</p>
+                    <p className="cursor-pointer" onClick={() => Apis()}>
+                      New API.
+                    </p>
                   </div>
                 </>
               ) : (
