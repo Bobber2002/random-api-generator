@@ -1,9 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, .07);
+  border-radius: 9999px;
+  height: 12px;
 }
